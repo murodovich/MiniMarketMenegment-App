@@ -1,0 +1,143 @@
+﻿<Window x:Class="sinup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sinup"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Background="Aquamarine"
+        
+        
+        Title="SignUp" Height="600" Width="550">
+    <Grid>
+        <TabControl SelectionChanged="TabControl_SelectionChanged_1">
+            <TabItem Header="Welcome MiniMarket Aplication"  Width="300" 
+                     BorderThickness="0"
+                     FontSize="22"
+                     FontStyle="Italic"
+                     >
+                <Border BorderThickness="0"
+                        CornerRadius="20" 
+                        Background="White" 
+                        MaxWidth="320"
+                        MaxHeight="400"
+                        Margin="0,58,0,91">
+                    <StackPanel >
+                        <ComboBox Margin="40,30,40,0"
+                                  BorderThickness="0"
+                                  Background="LightGray"
+                                  md:TextFieldAssist.TextFieldCornerRadius="10"
+                                  md:HintAssist.Hint="  Lavozim"
+                                  md:HintAssist.HintOpacity="0.8"
+                                  Foreground="Black"
+                                  FontSize="15" 
+                                  FontStretch="SemiCondensed" 
+                                  FontStyle="Normal"  
+                                  Name="Combobox_login"
+                                  Text="Select Role" SelectionChanged="ComboBox_SelectionChanged">
+                            <ComboBoxItem Content="Admin"  />
+                            <ComboBoxItem Content="Sellar"/>
+
+
+
+
+
+
+                        </ComboBox>
+                        <TextBox md:TextFieldAssist.TextFieldCornerRadius="10" 
+                                 BorderThickness="0" 
+                                 Name="username_text1"
+                                 md:HintAssist.Hint="    Username" 
+                                 md:HintAssist.HintOpacity="0.5"  
+                                 FontSize="15" 
+                                 FontStretch="SemiCondensed" 
+                                 FontStyle="Normal"  
+                                 Margin="40,60,40,30" 
+                                 Height="30" 
+                                 Background="LightGray" TextChanged="Username_text"  />
+                        <Image Source="D:\c#darslari\sinup\sinup\imagess\Username.png"
+                               Height="27"
+                               Margin="210,-90,0,0" Width="32"/>
+
+                        <PasswordBox md:TextFieldAssist.TextFieldCornerRadius="10" 
+                                 BorderThickness="0"
+                                 Name="password_text1"
+                                 md:HintAssist.Hint="    Password" 
+                                 md:HintAssist.HintOpacity="0.5"  
+                                 FontSize="15" 
+                                 FontStretch="SemiCondensed" 
+                                 FontStyle="Normal"  
+                                 Margin="40,0,40,30" Height="30" 
+                                 Background="LightGray" Password="" />
+                        <Image Source ="D:\c#darslari\sinup\sinup\imagess\passwords.png"
+                               Height="27"
+                               Margin="210,-90,0,0" Width="34"/> 
+                        <Label Margin="40,0,40,20"
+                               Name="password_label"
+                               Foreground="red"
+                               FontFamily="14"
+                               FontStyle="Italic">
+
+                        </Label>
+                        <Button Margin="10,30,170,70" 
+                                Content="Sign Up"
+                                md:ButtonAssist.CornerRadius="10"
+                                BorderThickness="0"
+                                Background= "Blueviolet" Click="Login_btn_Click"/>
+                        
+
+
+                        <Button Margin="170,-104,10,70" 
+                                Content="Registr"
+                                md:ButtonAssist.CornerRadius="10"
+                                BorderThickness="0"
+                                Background= "Blueviolet" Click="Registr_btn_Click"/>
+
+                        
+
+                        <Label Margin="-350,-280,350,260"
+                               FontSize="14" Height="21"
+                               FontStyle="Italic"
+                               Content="WELCOME">
+                            
+                        </Label>
+                        <Label Margin="-350,-190,350,260"
+                               FontSize="14" Height="21"
+                               FontStyle="Italic"
+                               Content="MiniMarket">
+
+                        </Label>
+
+                        <Label Margin="-350,-180,350,260"
+                               FontSize="14" Height="21"
+                               FontStyle="Italic"
+                               Content="">
+
+                        </Label>
+
+
+
+                    </StackPanel>
+                </Border>
+               
+            </TabItem>
+
+              
+            
+
+
+
+
+
+
+        </TabControl>
+
+
+
+
+
+
+
+    </Grid>
+</Window>

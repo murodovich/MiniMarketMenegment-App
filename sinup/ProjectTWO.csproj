@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="imagess\1000_F_506502372_rkbkcCAoZVFbnnbkvLNf0uu0ZGR6XSWW.jpg" />
+    <None Remove="imagess\3596091.png" />
+    <None Remove="imagess\download.jpg" />
+    <None Remove="imagess\passwords.png" />
+    <None Remove="imagess\products.png" />
+    <None Remove="imagess\Seewoo-Asian-supermarket-shutterstock_1856035177-720x405.jpg" />
+    <None Remove="imagess\Sellings.jpg" />
+    <None Remove="imagess\Username.png" />
+    <None Remove="imagess\username1.png" />
+    <None Remove="Images\Seewoo-Asian-supermarket-shutterstock_1856035177-720x405.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql" Version="7.0.4" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Windowss\NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="imagess\1000_F_506502372_rkbkcCAoZVFbnnbkvLNf0uu0ZGR6XSWW.jpg" />
+    <Resource Include="imagess\3596091.png" />
+    <Resource Include="imagess\download.jpg" />
+    <Resource Include="imagess\passwords.png" />
+    <Resource Include="imagess\products.png" />
+    <Resource Include="imagess\Seewoo-Asian-supermarket-shutterstock_1856035177-720x405.jpg" />
+    <Resource Include="imagess\Sellings.jpg" />
+    <Resource Include="imagess\Username.png" />
+    <Resource Include="imagess\username1.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,192 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectTWO.Windowss"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="ProjectTWO.Windowss.Selling_Forms"
+        mc:Ignorable="d"
+        Background="Aquamarine"
+        Title="Selling_Forms" Height="900" Width="1500">
+        
+    <Grid>
+
+        <StackPanel
+            
+                    >
+            <Label FontWeight="Bold" Content="SELLING PRODUCTS"
+                Margin="300,0,300,0"
+                FontSize="36" Width="393"
+                   
+                
+                   
+                   />
+            <Label  Height="40"
+                    Margin="100,-10,900,0"
+                    Content="Seller Name"
+                    FontSize="28"
+                    Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                    Name="Seller_name"/>
+            <Label  Margin="900,-40,200,0"
+                    Content="Date"
+                    FontSize="28"
+                    Name="Date_time"
+                    Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold" Width="362"/>
+            <Label Content="ID"
+                   Margin="100,20,750,0"
+                   FontSize="28"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+
+            <TextBox Margin="110,-40,900,0"
+                materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
+                BorderThickness="0"
+                Name="ID_text" 
+                FontSize="15" 
+                FontStretch="SemiCondensed" 
+                FontStyle="Normal"  
+                Height="40" 
+                     
+                Background="White" Width="230"
+                     />
+            <Label Content="Price"
+                Margin="100,10,740,0"
+                FontSize="28"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+
+            <TextBox Margin="110,-40,900,0"
+                materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
+                BorderThickness="0"
+                Name="Price_text"
+                FontSize="15" 
+                FontStretch="SemiCondensed" 
+                FontStyle="Normal"  
+                Height="40" 
+                     
+                Background="White" Width="230"
+                     />
+            <Button Margin="200,30,1100,0"
+                Height="40"
+                Content="Add Order"
+                Background="Blue"
+                FontWeight="Bold"
+                FontStretch="Medium"
+                FontSize="22" 
+                Name="Add_btn" Click="Add_btn_Click"
+                
+                  />
+            <Label Content="Amount"
+                Margin="750,40,600,0"
+                FontSize="28" Height="46"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   
+                   />
+            <Label Content="        Sum"
+                Margin="1050,-50,200,0"
+                FontSize="28" Height="46"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   Name="Sum_label" Width="198"
+                   />
+
+            <ComboBox  Margin="110,70,1100,0"
+                       Background="White"
+                       materialDesign:TextFieldAssist.TextFieldCornerRadius="14"
+                       Height="40"
+                       materialDesign:HintAssist.Hint="    Select Category"
+                       materialDesign:HintAssist.HintOpacity="0.8"
+                       FontStretch="SemiCondensed"
+                       FontWeight="Bold"
+                       Name="category_Combobox"
+                       FontSize="18" SelectionChanged="category_Combobox_SelectionChanged" Width="178"
+                       />
+            <Button Margin="380,-40,950,0"
+                Height="40"
+                Content="Refresh"
+                Background="Blue"
+                FontWeight="Bold"
+                FontStretch="Medium"
+                FontSize="22" Click="Button_Click_1" Width="144" 
+                  />
+            <Label Content="Sells List"
+                Margin="750,-40,300,0"
+                FontSize="28" Width="143"
+                Foreground="Blue"
+                FontWeight="Bold"
+                FontStretch="Medium"
+                   />
+            <DataGrid Margin="530,-520,0,0" 
+                Height="191"
+                Width="587"
+                Background="White"  
+                Name="datagrid"   
+                Foreground="Black" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False"
+                >
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="ProdID"/>
+                    <DataGridTextColumn x:Name="ProdName" />
+                    <DataGridTextColumn x:Name="ProdPrice" />
+                    <DataGridTextColumn x:Name="ProdQty" />
+                    <DataGridTextColumn x:Name="Total" />
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid
+                Margin="-800,30,20,0"
+                Height="235"
+                Width="477"
+                Background="White"  
+                Name="datagrid_selling"   
+                Foreground="Black" 
+                />
+            <DataGrid Margin="550,-240,0,0"
+                Height="244"
+                Width="590"
+                Background="White"  
+                x:Name="datagrid_Copy1"   
+                Foreground="Black"
+                />
+            <Button Margin="750,10,600,0"
+                Height="40"
+                Content="Add"
+                Background="Blue"
+                FontWeight="Bold"
+                FontStretch="Medium"
+                FontSize="22" 
+                x:Name="Update_btn_Copy" Click="Update_btn_Copy_Click" Width="137"  
+                    />
+            <Button Margin="930,-40,420,0"
+                Height="40"
+                Content="Print"
+                Background="Blue"
+                FontWeight="Bold"
+                FontStretch="Medium"
+                FontSize="22"
+                Name="Delete_btn_Copy" Width="137" 
+                    />
+            <Button Margin="1090,-40,230,0"
+                    Height="40"
+                    Content="Logout"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click" Width="140"
+                    
+            />
+
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,220 @@
+﻿<Window x:Class="ProjectTWO.Windowss.Product_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        xmlns:local="clr-namespace:ProjectTWO.Windowss"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Product_Window" Height="700" Width="1500">
+    <Window.Background>
+        <ImageBrush ImageSource="D:\c#darslari\sinup\sinup\imagess\Seewoo-Asian-supermarket-shutterstock_1856035177-720x405.jpg"/>
+    </Window.Background>
+    <Grid>
+        <StackPanel
+                    Width="1200"
+                    Margin="250,0,-80,0"
+                    
+                    >
+            <Label FontWeight="Bold" Content="MANAGE PRODUCTS"
+                   Margin="300,0,300,0"
+                   FontSize="36"
+                   
+                   />
+            <ComboBox Margin="650,0,290,0"
+                      md:TextFieldAssist.TextFieldCornerRadius="14"
+                      Background="White"
+                      Height="40"
+                      Name="Category_text1" SelectionChanged="Category_text1_SelectionChanged" Width="228"
+                      md:HintAssist.HintOpacity="0.8"
+                      md:HintAssist.Hint="  Select Category"
+                      FontWeight="Bold"
+                      FontStretch="SemiCondensed"
+                      FontSize="18"
+                      
+
+                      
+                      
+/>
+            <Button Margin="930,-40,100,0"
+                    Height="40"
+                    Content="Refresh"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click_7"
+                    />
+            <Label Content="ID"
+                   Margin="100,100,750,0"
+                   FontSize="28"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+
+            <TextBox Margin="230,-40,700,0"
+                     md:TextFieldAssist.TextFieldCornerRadius="14"
+                     BorderThickness="0"
+                     Name="ID_text" 
+                     FontSize="15" 
+                     FontStretch="SemiCondensed" 
+                     FontStyle="Normal"  
+                     Height="40" 
+                     
+                     Background="White"
+                     />
+            <Label Content="Name"
+                   Margin="100,10,740,0"
+                   FontSize="28"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+
+            <TextBox Margin="230,-40,700,0"
+                     md:TextFieldAssist.TextFieldCornerRadius="14"
+                     BorderThickness="0"
+                     Name="Name1_textbox"
+                     FontSize="15" 
+                     FontStretch="SemiCondensed" 
+                     FontStyle="Normal"  
+                     Height="40" 
+                     
+                     Background="White"
+                     />
+            <Label Content="Price"
+                   Margin="100,10,740,0"
+                   FontSize="28"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+
+            <TextBox Margin="230,-40,700,0"
+                     md:TextFieldAssist.TextFieldCornerRadius="14"
+                     BorderThickness="0"
+                     Name="Price_textbox"
+                     FontSize="15" 
+                     FontStretch="SemiCondensed" 
+                     FontStyle="Normal"  
+                     Height="40" 
+                     
+                     Background="White"
+                     />
+            <Label Content="Quantity"
+                   Margin="100,10,700,0"
+                   FontSize="28"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+
+            <TextBox Margin="230,-40,700,0"
+                     md:TextFieldAssist.TextFieldCornerRadius="14"
+                     BorderThickness="0"
+                     Name="Quantity_textbox"
+                     FontSize="15" 
+                     FontStretch="SemiCondensed" 
+                     FontStyle="Normal"  
+                     Height="40" 
+                     
+                     Background="White"
+                     />
+            <Label Content="Category"
+                   Margin="40,10,900,0"
+                   FontSize="28" Width="144"
+                   Foreground="Blue"
+                   FontStretch="Medium"
+                   FontWeight="Bold"
+                   />
+            <ComboBox Margin="230,-40,700,0"
+                      Background="White" 
+                      md:TextFieldAssist.TextFieldCornerRadius="14"
+                      Height="40"
+                      md:HintAssist.Hint="    Select Category"
+                      md:HintAssist.HintOpacity="0.8"
+                      FontStretch="SemiCondensed"
+                      FontWeight="Bold"
+                      FontSize="18"
+                      
+                      Name="Category_text" SelectionChanged="Category_text_SelectionChanged"
+                      />
+            
+
+            <Button Margin="100,40,990,0"
+                    Height="40"
+                    Content="Add"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Add_btn_click"
+                    />
+            <Button Margin="220,-40,870,0"
+                    Height="40"
+                    Content="Update"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" 
+                    Name="Update_btn" Click="Update_btn_Click"
+                    />
+            <Button Margin="340,-40,750,0"
+                    Height="40"
+                    Content="Delete"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22"
+                    Name="Delete_btn" Click="Delete_btn_Click"
+                    />
+            <Button Margin="460,-40,600,0"
+                    Height="40"
+                    Content="Clear Data"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click_4"
+                    />
+            <Button Margin="-250,-900,1250,0"
+                    Height="40"
+                    Content="Seller"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click_2"
+                    />
+            <Button Margin="-250,-700,1250,0"
+                    Height="40"
+                    Content="Category"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click_3"
+                    />
+            <Button Margin="-250,-500,1250,0"
+                    Height="40"
+                    Content="Selling"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click_6"
+                    />
+            <Button Margin="-250,0,1250,0"
+                    Height="40"
+                    Content="Log Out"
+                    Background="Blue"
+                    FontWeight="Bold"
+                    FontStretch="Medium"
+                    FontSize="22" Click="Button_Click_1"
+                    />
+            <DataGrid Margin="630,-450,0,0" 
+                      Height="458"
+                      Width="528"
+                      Background="White" 
+                      SelectionChanged="DataGrid_SelectionChanged" 
+                      Name="datagrid"   
+                      Foreground="Black"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
