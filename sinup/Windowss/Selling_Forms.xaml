@@ -53,7 +53,7 @@
                 FontStyle="Normal"  
                 Height="40" 
                      
-                Background="White" Width="230"
+                Background="White" Width="230" TextChanged="ID_text_TextChanged"
                      />
             <Label Content="Price"
                 Margin="100,10,740,0"
