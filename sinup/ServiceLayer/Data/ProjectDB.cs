@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Npgsql;
 using ProjectTWO.ServiceLayer.Model;
-using ProjectTWO.Windowss;
 using sinup.ServiceLayer.User;
 
 namespace sinup.ServiceLayer.Data
@@ -16,20 +14,20 @@ namespace sinup.ServiceLayer.Data
 
         //public NpgsqlConnection GetCon()
         //{
-            
+
         //}
-        public DbSet<ServiceModel>  serviceModels { get; set; }
-        public DbSet<Product>  products { get; set; }
+        public DbSet<ServiceModel> serviceModels { get; set; }
+        public DbSet<Product> products { get; set; }
         public DbSet<Categoryes> categories { get; set; }
 
         public DbSet<Sellers> sellers { get; set; }
 
-        public DbSet<Sellings_product> selings_products { get; set;}
+        public DbSet<Sellings_product> selings_products { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+
 
             modelBuilder.Entity<Categoryes>().HasData(
                 new Categoryes
@@ -51,7 +49,7 @@ namespace sinup.ServiceLayer.Data
                     CategoryId = 3,
                     Name = "Ichimliklar",
                     Description = "Ichimliklar turli hil"
-                    
+
                 });
 
 
@@ -84,7 +82,8 @@ namespace sinup.ServiceLayer.Data
                     ProdCat = "Non"
                 },
                 new Product
-                {   ProdId = 4,
+                {
+                    ProdId = 4,
                     Name = "Coca-cola",
                     Price = 10,
                     Quantity = 11900,
@@ -146,7 +145,7 @@ namespace sinup.ServiceLayer.Data
                     UserName = "murodovich",
                     Password = "sarvar0303",
                     Phone = "+998 950940303"
-                    
+
 
 
                 });
@@ -159,7 +158,7 @@ namespace sinup.ServiceLayer.Data
                     Age = 21,
                     Password = "sarvar0303",
                     Phone = "+998 950940303"
-                    
+
 
 
 

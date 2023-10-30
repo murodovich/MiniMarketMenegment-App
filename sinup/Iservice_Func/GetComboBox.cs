@@ -1,19 +1,14 @@
 ﻿using Npgsql;
+using ProjectTWO.Windowss;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
 using System.Windows;
-using ProjectTWO.ServiceLayer.Model;
-using ProjectTWO.Windowss;
 
 namespace ProjectTWO.Iservice_Func
 {
-    public class GetComboBox:Product_Window
+    public class GetComboBox : Product_Window
     {
-        
+
 
         // Bazadan ma'lumotlarni olish va ComboBoxga joylash funksiyasi
         private void PopulateComboBoxFromDatabase()

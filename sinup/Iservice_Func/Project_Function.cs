@@ -1,16 +1,12 @@
 ﻿using sinup.ServiceLayer.Data;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjectTWO.Iservice_Func
 {
     public class Project_Function
     {
         ProjectDB dB = new ProjectDB();
-        public Project_Function() 
+        public Project_Function()
         {
 
         }

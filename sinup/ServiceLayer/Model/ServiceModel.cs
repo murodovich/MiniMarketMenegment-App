@@ -1,20 +1,13 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace sinup.ServiceLayer.User
 {
     public class ServiceModel
     {
-        
+
         [Key]
         public int Id { get; set; }
-        
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -25,7 +18,7 @@ namespace sinup.ServiceLayer.User
 
         public string Phone { get; set; }
 
-        
+
 
 
     }

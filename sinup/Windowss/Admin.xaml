@@ -35,7 +35,7 @@
                             FontStyle="Normal"  
                             Margin="40,60,40,30" 
                             Height="30" 
-                            Background="LightGray"   />
+                            Background="LightGray" TextChanged="username_text1_TextChanged"   />
                         <Image Source="D:\c#darslari\sinup\sinup\imagess\Username.png"
                             Height="27"
                             Margin="210,-90,0,0" Width="32"/>
